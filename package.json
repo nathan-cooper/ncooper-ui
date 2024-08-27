@@ -18,7 +18,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite --config vite.build.config.ts build",
     "lint": "eslint .",
     "preview": "vite preview",
     "publish-app": "npm run build && npm publish",
@@ -37,6 +37,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.7.0",
     "@eslint/js": "^9.9.0",
+    "@rollup/plugin-babel": "^6.0.4",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
     "@storybook/addon-links": "^8.2.9",
@@ -56,8 +57,10 @@
     "eslint-plugin-storybook": "^0.8.0",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
+    "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "^8.2.9",
     "tailwindcss": "^3.4.10",
+    "tslib": "^2.7.0",
     "typescript": "5.4.2",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
