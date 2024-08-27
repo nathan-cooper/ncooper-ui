@@ -9,7 +9,7 @@ export default meta;
 
 type Story = StoryObj<typeof PageContainer>;
 
-export const Defautl: Story = {
+export const Default: Story = {
     args: {
       children: "This is the page container contents"
     }

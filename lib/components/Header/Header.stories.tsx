@@ -9,7 +9,7 @@ export default meta;
 
 type Story = StoryObj<typeof Header>;
 
-export const Defautl: Story = {
+export const Default: Story = {
     args: {
       
     }

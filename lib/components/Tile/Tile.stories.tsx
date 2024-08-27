@@ -10,7 +10,7 @@ export default meta;
 
 type Story = StoryObj<typeof Tile>;
 
-export const Defautl: Story = {
+export const Default: Story = {
     args: {
         title: "Title",
         description: "Description of the Tile",
