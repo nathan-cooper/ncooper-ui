@@ -16,3 +16,12 @@ export const Default: Story = {
         link: "/some-path"
     }
 }
+
+export const Variant_White: Story = {
+  args: {
+      title: "Title",
+      description: "Description of the card",
+      link: "/some-path",
+      variant: "white"
+  }
+}

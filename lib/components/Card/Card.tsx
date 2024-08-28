@@ -58,22 +58,36 @@ export interface DevCenterCardProps {
     link: string;
     containerProps?: React.ComponentProps<typeof Box>;
     navigateFunction?: NavigateFunction;
+    variant?: "blue" | "white"
 }
 
-export const Card = ({ title, description, link, containerProps, navigateFunction }: DevCenterCardProps) => {
+export const Card = ({ title, description, link, containerProps, navigateFunction, variant = "blue" }: DevCenterCardProps) => {
     return (
-        <CardContainer data-testid="card__container" {...containerProps}>
+        <CardContainer data-testid="card__container" 
+            sx={{ backgroundColor: variant === "blue" ? styles.blue : "white" }} {...containerProps}
+        >
             <Box data-testid="card__textContainer">
-                <CardTitleText data-testid="card__title">
+                <CardTitleText data-testid="card__title"
+                    sx={{ 
+                        color: variant === "blue" ? "white" : "black",
+                        marginBottom: variant === "blue" ? "0" : "1rem"
+                    }}
+                >
                     {title}
                 </CardTitleText>
-                <CardDivider />
-                <CardDescriptionText data-testid="card__description">
+                {variant === "blue" && <CardDivider data-testid="card__divider" />}
+                <CardDescriptionText data-testid="card__description"
+                    sx={{ 
+                        color: variant === "blue" ? "white" : "black",
+                        marginBottom: variant === "blue" ? "0" : "2rem"
+                    }}
+                >
                     {description}
                 </CardDescriptionText>
             </Box>
             <CardButton data-testid="card__button"
                 onClick={() => navHelper(link, navigateFunction)}
+                sx={{ backgroundColor: variant === "blue" ? styles.medBlue : styles.orange}}
             >
                 Learn more
             </CardButton>
