@@ -14,3 +14,10 @@ export const Default: Story = {
       children: "This is the page container contents"
     }
 }
+
+export const Internal: Story = {
+  args: {
+    variant: "internal",
+    children: "This is the page container contents"
+  }
+}
