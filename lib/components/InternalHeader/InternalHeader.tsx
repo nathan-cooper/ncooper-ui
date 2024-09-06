@@ -3,7 +3,7 @@ import headerLogo from "../../assets/Logo_white.png";
 import { styles } from "../../constants/style.constants";
 import { NavigateFunction } from "react-router-dom";
 import { navHelper } from "../../helper/helper";
-import { HEADER_LINKS, INTERNAL_HEADER_LINKS } from "../../constants/navyFederal.constants";
+import { INTERNAL_HEADER_LINKS } from "../../constants/navyFederal.constants";
 
 const HeaderOuterContainer = styled(Box)(()=>({
     width: "100%",
