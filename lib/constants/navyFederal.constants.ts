@@ -23,6 +23,18 @@ export const HEADER_LINKS = [{
     link: "/signup"
 }];
 
+export const INTERNAL_HEADER_LINKS = [{
+    title: "API marketplace",
+    link: "/api-marketplace"
+}, {
+    title: "API access guide",
+    link: "/api-access-guide"
+}, {
+    title: "Resources",
+    link: "/resources"
+}];
+
+
 export const FOOTER_LINKS = [{
     title: "Privacy",
     link: "/privacy"

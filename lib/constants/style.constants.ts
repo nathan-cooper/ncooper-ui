@@ -3,5 +3,6 @@ export const styles = {
     medBlue: "#0C65B9",
     orange: "#EE770F",
     lightBlue: "#D7E9F7",
-    gray: "#EBEAE6"
+    gray: "#EBEAE6",
+    offwhite: "#F5F5F5"
 }
